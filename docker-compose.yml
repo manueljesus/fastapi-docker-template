@@ -1,0 +1,20 @@
+services:
+  template-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILD_MODE: ${BUILD_MODE}
+    container_name: template-app
+    env_file:
+      - .env
+    volumes:
+      - .:/workdir
+    networks:
+      - app-network
+    ports:
+      - "8000:8000"
+
+networks:
+  app-network:
+    driver: bridge
