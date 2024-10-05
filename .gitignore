@@ -1,0 +1,22 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Unit test / coverage reports
+htmlcov/
+tests/**/results**
+**/tmp/
+.coverage
+coverage.xml
+.pytest_cache/
+
+# Environment
+.env
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
