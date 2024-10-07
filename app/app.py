@@ -1,9 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(
-    title="Template App",
-    description="Template App"
-)
+app = FastAPI(title="Template App", description="Template App")
 
 
 @app.get("/")
