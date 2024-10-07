@@ -58,7 +58,7 @@ Usage: make [target]
 | **stop**            | Stop the services keeping containers, networks, and volumes                                                             |
 | **down**            | Stop the services and remove containers, networks, and volumes created by `up`                                         |
 | **logs**            | Follow logs for the services                                                                                             |
-| **shell**           | Login into the app container                                                                                            |
+| **shell**           | Login into the app container to perform the rest of operations not configured in the Makefile, such as dependency management.|
 | **test**            | Run linters then the unit test suite. Ensure `BUILD_MODE=development` is set in the .env file; otherwise, this won't work|
 | **pytest**          | Run the unit test suite only. Ensure `BUILD_MODE=development` is set in the .env file; otherwise, this won't work      |
 | **lint**            | Run all linters                                                                                                        |
