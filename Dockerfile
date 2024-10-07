@@ -26,6 +26,8 @@ FROM python:3.12.5-slim-bookworm
 ARG BUILD_MODE=production
 RUN echo "BUILD_MODE=$BUILD_MODE"
 
+ENV POETRY_VIRTUALENVS_CREATE=false
+
 # Set the working directory
 WORKDIR /workdir
 
